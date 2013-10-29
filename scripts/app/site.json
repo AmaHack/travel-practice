@@ -1,0 +1,10 @@
+{
+    containerId : "homeScreen",
+    appData : {
+        navigation : {}
+    },
+    navigation : "hash",
+    commonModules : {},
+    css : [], // available since Aria Templates 1.3-7
+    animations : true // available since Aria Templates 1.4-2
+}
