@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	background:#fff;
+	font-family:Arial;
+	font-size:100%;
+	color:#333
+}
+* {
+	margin:0px;
+	padding:0px
+}
+ul, li {
+	margin:0px;
+	padding:0px;
+	list-style:none
+}
+#header {
+	position:absolute;
+	z-index:2;
+	top:0;
+	left:0;
+	width:100%;
+	height:45px;
+	line-height:45px;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #fe96c9), color-stop(0.05, #d51875), color-stop(1, #7b0a2e));
+	background-image:-moz-linear-gradient(top, #fe96c9, #d51875 5%, #7b0a2e);
+	background-image:-o-linear-gradient(top, #fe96c9, #d51875 5%, #7b0a2e);
+	padding:0;
+	color:#eee;
+	font-size:20px;
+	text-align:center;
+}
+#header a {
+	color:#f3f3f3;
+	text-decoration:none;
+	font-weight:bold;
+	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+#footer {
+	position:absolute;
+	z-index:2;
+	bottom:0;
+	left:0;
+	width:100%;
+	background:#323232;
+	padding:0;
+}
+#footer div.button {
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #1f80df), color-stop(100%, #0355a2));
+	background-image:-moz-linear-gradient(top, #1f80df, #0355a2 100%);
+	width:95%;
+	margin:5px auto;
+	color:#fff;
+	text-align:center;
+	padding:10px;
+	text-shadow:1px 1px 1px #000;
+}
+#wrapper {
+	position:absolute;
+	z-index:1;
+	top:45px;
+	bottom:48px;
+	left:0;
+	width:100%;
+	overflow:auto;
+}
+#homeScreen #wrapper {
+	top:0px
+}
+#scroller {
+	position:absolute;
+	z-index:1;
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	width:100%;
+	padding:0;
+}
+#scroller ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:100%;
+	text-align:left;
+}
+#scroller li {
+	background-color:#fff;
+}
+.backGroundImage {
+	background:url(../img/mainImage.png) no-repeat 50% 0;
+	background-size:100%;
+	height:350px;
+}
+.backGroundImage span.title {
+	position:relative;
+	color:#fff;
+	left:1%;
+	top:20px;
+	font-size:1.5em;
+	padding:20px
+}
+.backGroundImage span.titleName {
+	font-size:1.2em;
+}
+.inspirations {
+	font-size:2.1em;
+	color:#014ea6;
+	background:#ccc;
+	padding:10px;
+	font-weight:bold
+}
+span.facebook, span.seasaonal, span.wellBeing {
+	width:33%;
+	float:left;
+	height:200px;
+	text-align:center;
+	line-height:24em
+}
+span.facebook {
+	background:url(../img/fc.png) no-repeat 50% 0;
+	background-size:180px 180px
+}
+span.seasaonal {
+	background:url(../img/ses.png) no-repeat 50% 0;
+	background-size:180px 180px
+}
+span.wellBeing {
+	background:url(../img/well.png) no-repeat 50% 0;
+	background-size:180px 180px
+}
+.mask {
+	position:absolute;
+	height:100%;
+	width:100%;
+	background:#000;
+	top:0px;
+	left:0px;
+	z-index:100;
+	opacity:.5;
+}
+.popUp {
+	position:absolute;
+	top:10%;
+	background:#fff;
+	width:80%;
+	z-index:101;
+	left:10%;
+	border-radius:4px;
+}
+.header {
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #9bc3f7), color-stop(100%, #2771d1));
+	background-image:-moz-linear-gradient(top, #9bc3f7, #2771d1 100%);
+	color:#fff;
+	padding:10px;
+	border-radius:5px 5px 0 0;
+	position:relative
+}
+.close {
+	background:url(../img/close.png) no-repeat 50% 50%;
+	background-size:25px 25px;
+	position:absolute;
+	right:5px;
+	top:5px;
+	display:inline-block;
+	width:28px;
+	height:28px
+}
+.headerText {
+	font-size:.8em;
+	padding:5px;
+	border-bottom:1px solid #ccc
+}
+.listButton {
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #fff), color-stop(100%, #d5d5d5));
+	background-image:-moz-linear-gradient(top, #d5d5d5, #fff 100%);
+	border:1px solid #ccc;
+	font-size:85%;
+	padding:5px;
+	border-radius:4px;
+	width:95%;
+	margin:10px auto
+}
+.listButton ul li {
+	padding-left:35px
+}
+.listButton ul li span.strong {
+	font-weight:bold
+}
+.listButton ul {
+	background:url(../img/arrow.png) 100% 50% no-repeat;
+	background-size:12px 18px;
+	position:relative
+}
+.listButton ul li.smalltext {
+	font-size:90%
+}
+.listButton ul li.icons {
+	background:url(../img/pin.png) no-repeat 50% 50%;
+	background-size:25px 25px;
+	position:absolute;
+	width:25px;
+	height:25px;
+	top:3px;
+	left:-15px
+}
