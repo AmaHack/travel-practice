@@ -6,7 +6,10 @@ Aria.tplScriptDefinition({
 	$prototype : {
 		$displayReady: function(){
 		},
-		getDetails: function(){
+		getDetails: function(){{
+			 
+			 alert("getDetails clicke");
+						 
 			var url = "http://1.glassy-song-375.appspot.com/GetTopEvents?date=FutureDate&page_size=100&keywords=(Festivals%20||%20Holiday)&sort_order=popularity&sort_order=ascending&max_cities=5&lat=12.9667&lng=77.5667&max_events=10";
 			/*//pageEngine.navigate({"pageId":"DETAILS"});
 			  $.ajax({
@@ -37,16 +40,31 @@ Aria.tplScriptDefinition({
 		    });*/
 
 			$.ajax({
-			    crossDomain: true,
-			    url: url,
-			    success: function (responseData, textStatus, jqXHR) {
-			        console.log(responseData);
-			    },
-			    error: function (responseData, textStatus, errorThrown) {
-			        console.log('POST failed.');
-			    }
+				   url: url,
+				   cache: false,
+				   type: "POST",
+				   processData: false,
+				   crossDomain:"true",
+				   complete: function (responseData, textStatus, jqXHR)
+				   {
+				   if(textStatus == "success")
+				   {
+				   alert("CALL SUCCESS");
+				   alert(JSON.stringify(responseData));
+
+				   }
+				   else
+				   {
+				   alert("FAILED IF");
+				   }
+				   },
+					error: function (responseData, textStatus, errorThrown)
+					   {
+						console.log('POST failed.');
+					   alert("FAILEDS API CALL");
+					}
 			});
-		},
+		}},
 		_eventsCallback: function(data){
 			console.log(data);
 		}
