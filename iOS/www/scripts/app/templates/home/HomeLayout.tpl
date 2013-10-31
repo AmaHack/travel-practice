@@ -35,10 +35,7 @@
         id : "popuplist",
         macro : {
           name: "popupmacro"
-        },bindRefreshTo : [{
-          to : "popupData",
-          inside : data
-        }]
+        }
     }/}
   </div>
   {/macro}
@@ -50,7 +47,7 @@
     {if this.data.popupData.list.length > 0}
       {set lists = this.data.popupData.list /}
       {foreach list inArray lists}
-        <div class="button" {on click { fn : getDetails} /}>
+        <div class="button" data=${list.title} >
           <ul>
             <li>${list.title}</li>
             <li class="smallFont">${list.desc}</li>

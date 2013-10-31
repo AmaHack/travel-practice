@@ -361,7 +361,7 @@ Aria.tplScriptDefinition({
                          
      alert("Inside getDetails");
      this.moduleCtrl.data = this.data;
-     fbeventful.locationEvent();
+    // fbeventful.locationEvent();
      pageEngine.navigate({'pageId':'DETAILS'});
                          
      },
@@ -426,7 +426,17 @@ Aria.tplScriptDefinition({
                          myData.list[2].desc = "TEST DATA";
                          
                          this.$json.setValue(this.data,"popupData",myData);
-                         
+                        
+                         this.$refresh({
+                                       outputSection: "popuplist"
+                                       });
+                         var btn = $(".button");
+                         var that = this
+                         btn.click(function(){
+                                   //alert(this);
+                                   alert(this.getAttribute("data"));
+                                   that.getDetails();
+                                   })
                          $(".loading, .mask").show();
                          $(".loading").hide();
                          $(".popUp, .dialog").show();
