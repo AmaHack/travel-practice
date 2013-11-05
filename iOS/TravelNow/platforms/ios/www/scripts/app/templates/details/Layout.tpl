@@ -10,14 +10,7 @@
   <div id="wrapper" class="detailsWrapper">
     <div id="scroller">
       <ul id="thelist">
-        <li class="maps">
-        {section {
-          id : "mapblock",
-          macro : {
-            name: "mapmacro"
-          }
-        }/}
-        </li>
+	<li id="map-canvas" style="width:100%;height:200px;margin:0px;padding:0px;"></li>
         <li class="placeDetails">
           <div class="container">
             <div class="header">Place details</div>

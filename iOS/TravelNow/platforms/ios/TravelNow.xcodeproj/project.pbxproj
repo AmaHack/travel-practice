@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01C1DF6118296613003EBD50 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C1DF6018296613003EBD50 /* FacebookSDK.framework */; };
 		1891515445294618AAD58462 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0186718B1FEB4583A6A270FD /* CDVLocation.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -34,7 +35,6 @@
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		8D95B87718211D4C00923F8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D95B87618211D4C00923F8C /* Images.xcassets */; };
 		8DA8A4C4181924DA002CB52B /* www in Resources */ = {isa = PBXBuildFile; fileRef = 301BF56E109A69640062928A /* www */; };
-		8DA8A4C7181939B5002CB52B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA8A4C6181939B5002CB52B /* FacebookSDK.framework */; };
 		8DA8A4CA181939D6002CB52B /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8DA8A4C8181939D6002CB52B /* FacebookSDKResources.bundle */; };
 		8DA8A4CB181939D6002CB52B /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8DA8A4C9181939D6002CB52B /* FBUserSettingsViewResources.bundle */; };
 		8DA8A4F818193A20002CB52B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA8A4F718193A20002CB52B /* Accounts.framework */; };
@@ -68,6 +68,7 @@
 /* Begin PBXFileReference section */
 		009BADF13A3644D98622C6BF /* CDVInAppBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVInAppBrowser.m; path = org.apache.cordova.inappbrowser/CDVInAppBrowser.m; sourceTree = "<group>"; };
 		0186718B1FEB4583A6A270FD /* CDVLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVLocation.m; path = org.apache.cordova.geolocation/CDVLocation.m; sourceTree = "<group>"; };
+		01C1DF6018296613003EBD50 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		113A6A324FF64BAFAED29B51 /* CDVLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLocation.h; path = org.apache.cordova.geolocation/CDVLocation.h; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,7 +102,6 @@
 		74D0FAF372D248D4B0605446 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVInAppBrowser.h; path = org.apache.cordova.inappbrowser/CDVInAppBrowser.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* TravelNow-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TravelNow-Info.plist"; path = "../TravelNow-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		8D95B87618211D4C00923F8C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TravelNow/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		8DA8A4C6181939B5002CB52B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		8DA8A4C8181939D6002CB52B /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		8DA8A4C9181939D6002CB52B /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
 		8DA8A4CD18193A00002CB52B /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
@@ -163,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C1DF6118296613003EBD50 /* FacebookSDK.framework in Frameworks */,
 				8DA8A50018193A36002CB52B /* libsqlite3.0.dylib in Frameworks */,
 				8DA8A4FE18193A30002CB52B /* Social.framework in Frameworks */,
 				8DA8A4FC18193A2C002CB52B /* AdSupport.framework in Frameworks */,
@@ -173,7 +174,6 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
-				8DA8A4C7181939B5002CB52B /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +262,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01C1DF6018296613003EBD50 /* FacebookSDK.framework */,
 				8DA8A4FF18193A36002CB52B /* libsqlite3.0.dylib */,
 				8DA8A4FD18193A30002CB52B /* Social.framework */,
 				8DA8A4FB18193A2C002CB52B /* AdSupport.framework */,
@@ -270,7 +271,6 @@
 				8DA8A4CC18193A00002CB52B /* DeprecatedHeaders */,
 				8DA8A4C8181939D6002CB52B /* FacebookSDKResources.bundle */,
 				8DA8A4C9181939D6002CB52B /* FBUserSettingsViewResources.bundle */,
-				8DA8A4C6181939B5002CB52B /* FacebookSDK.framework */,
 				5AEE5B34173C68D80009041E /* CoreLocation.framework */,
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
@@ -591,6 +591,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/adminadmin/Desktop/THack/Vishal/TravelNow/platforms/ios,
+					"/Users/roshan/Desktop/THack/travel-practice/iOS/TravelNow/platforms/ios",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -633,6 +634,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/adminadmin/Desktop/THack/Vishal/TravelNow/platforms/ios,
+					"/Users/roshan/Desktop/THack/travel-practice/iOS/TravelNow/platforms/ios",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravelNow/TravelNow-Prefix.pch";
